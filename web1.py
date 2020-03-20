@@ -13,7 +13,7 @@ fil= open("output.txt","a")
 f= open("dic.txt","r")
 f1 = f.readlines()
 
-
+# for loop keeps on running till FORever ... nvm
 for elem in f1:
     driver.find_element_by_xpath('//*[@id="inputHash"]').send_keys(elem+Keys.RETURN)
     output = driver.find_element_by_xpath('//*[@id="msg"]').text
